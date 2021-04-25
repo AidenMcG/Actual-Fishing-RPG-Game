@@ -8,6 +8,8 @@ print('-------------------------------------------------------------------------
 print('              WELCOME TO THE FISHING TOURNY CLASSIC GAME !!!')
 user_name = input('              PLEASE INPUT YOUR NAME: ')
 
+total = 0
+
 def itemShop():
     currency = 100
     total = 0
@@ -168,8 +170,9 @@ def itemShop():
             total = lure_total + reel_total + rod_total
              
             break
-
-            return total
+    fishingLevel(total)
+            #return total
+        
 '''
             return rod_total 
             return reel_total 
@@ -187,9 +190,11 @@ def itemShop():
 #itemShop()
 
 #currency, rod_name, reel_name, lure_name
-def fishingLevel():
-    total = itemShop()
-    
+def fishingLevel(total):
+    #total = itemShop(total)
+    print(total)
+
+'''  
     possible_fish = {'sunfish': 5,'bluegill': 8,'bass': 15, 'catfish': 30, 'musky': 50}
     possible_fish = str(possible_fish)
     possible_fish = possible_fish.replace('{', '').replace('}', '').replace("'","")
@@ -205,7 +210,7 @@ def fishingLevel():
 
     points = 0
     casts = 0
-    
+ 
     while(casts <= 5 and points < 40):
         cast = 0
         if(total > 0 and total <= 21):
@@ -240,13 +245,13 @@ def fishingLevel():
             cast = random.randint((31, 50))
         else:
             pass
+'''    
         
         
         
-        
-fishingLevel()
+#fishingLevel(total)
 
-
+itemShop()
 
 
 
