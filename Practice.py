@@ -245,13 +245,13 @@ def fishingLevel(total, currency):
                 pass
             casts += 1
             
-    checkWin(currency, level)
+    checkWin(points, currency, level)
     #currency += 40
     #itemShop(currency)
     #levelTwo(total, currency)
     
     
-def checkWin(currency, level):
+def checkWin(points, currency, level):
     if(points >= 23):
         currency += 40
         print('--------------------------------------------------------------------------------------------')
@@ -342,9 +342,9 @@ def levelTwo(total, currency):
     #checkWin(points, currency)
     currency += 60
     #itemShop(currency)
-    levelTwoCheck()
+    levelTwoCheck(points, currency, level)
     
-def levelTwoCheck():
+def levelTwoCheck(points, currency, level):
     if(points >= 75):
         currency += 60
         print('--------------------------------------------------------------------------------------------')
