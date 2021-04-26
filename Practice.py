@@ -349,12 +349,16 @@ def levelTwoCheck(points, currency, level):
         currency += 60
         print('--------------------------------------------------------------------------------------------')
         print('CONGRATS!! YOU HAVE COMPLETED LEVEL 2 OF THE FISHING TOURNY CLASSIC!!!')
-        print('YOU HAVE BEEN AWARDED 60 PIECES OF CURRENCY')
-        print('USE THIS CURRENCY TO REPURCHASE NEW AND BETTER ITEMS TO HELP ATTEMPT THE NEXT LEVEL')
+        print('THE FIRST SEASON OF THE FISHING CLASSIC TOURNY IS OVER')
+        print('SEASON TWO WILL BE RELEASED NEXT MONTH AND ALL YOUR CURRENCY WILL TRANSFER OVER')
+        #print('YOU HAVE BEEN AWARDED 60 PIECES OF CURRENCY')
+       # print('USE THIS CURRENCY TO REPURCHASE NEW AND BETTER ITEMS TO HELP ATTEMPT THE NEXT LEVEL')
         print('--------------------------------------------------------------------------------------------')
         print('CURRENCY: ', currency)
-        level += 1
-        itemShop(currency, level)
+        print('--------------------------------------------------------------------------------------------')
+        print('THANK YOU FOR PLAYING THE FISHING CLASSIC TOURNY!! STAY TUNED FOR MORE TOURNAMENTS IN THE FUTURE!')
+        #level += 1
+        #itemShop(currency, level)
         #levelTwo(total, currency)
         
     elif(points < 75):
